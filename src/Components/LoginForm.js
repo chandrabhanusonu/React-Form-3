@@ -42,7 +42,7 @@ import {toast} from "react-toastify"
                     required
                     type="email"
                     value = {formData.email}
-                    onchange={changeHandler}
+                    onChange={changeHandler}
                     name="email"
                     placeholder="Enter Your Email ID"/>
             </label>
@@ -57,7 +57,7 @@ import {toast} from "react-toastify"
                 type={showPassword ? ("text") : ("password")}
                 value={formData.password}
                 name="password"
-                onchange={changeHandler}
+                onChange={changeHandler}
                 placeholder="Enter Password"/>
 
                 <span onClick={() => setShowPassword( (prev) => !prev)}>
